@@ -16,60 +16,50 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 img, iframe {
   vertical-align: bottom;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 input, textarea, select {
-  font: inherit;
-}
+  font: inherit; }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
+  text-rendering: optimizeLegibility; }
 
 @font-face {
   font-family: "Jost";
-  src: url(fonts/jost-book.woff2), url(fonts/jost-book.woff);
-}
+  src: url(fonts/jost-book.woff2), url(fonts/jost-book.woff); }
+
 body {
-  background-color: #ca774a;
+  background-color: blue;
   color: #ffffff;
   font-family: "Jost";
   line-height: 1.5;
@@ -78,20 +68,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 section {
-  width: 500px;
-}
-@media (max-width: 600px) {
-  section {
-    width: 350px;
-    font-size: 16px;
-  }
-}
-section p {
-  margin: 24px 0 0 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+  width: 500px; }
+  @media (max-width: 600px) {
+    section {
+      width: 350px;
+      font-size: 16px; } }
+  section p {
+    margin: 24px 0 0 0; }
