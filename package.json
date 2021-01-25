@@ -1,0 +1,22 @@
+{
+  "name": "tropicali",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leannecuppage/tropicali.git"
+  },
+  "author": "Leanne Cuppage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leannecuppage/tropicali/issues"
+  },
+  "homepage": "https://github.com/leannecuppage/tropicali#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
