@@ -1,4 +1,4 @@
-// this adds it to the project so you can use it in your code
+// this adds the plug-ins to the project so you can use it in your code (need to add the plug-ins on a per project basis to include them in the package.json file. Do not need to install gulp again.)
 // require it from the package.json (what it's called in the package.json file i.e. gulp, gulp-sass, gulp-sourcemaps)
 var gulp = require('gulp')
 var sass = require('gulp-sass')
@@ -14,6 +14,7 @@ var imagemin= require("gulp-imagemin")
 // minify the images to save load speed
 // when you run gulp, it will show you how many images were minified and how many kB saved
 
+var ghpages = require("gh-pages")
 
 sass.compiler = require('node-sass')
 
@@ -79,6 +80,11 @@ gulp.task("watch", function () {
     // run "images" script and move them to the dist folder
 })
 
+// when you run "gulp deploy", it will publish to github pages from the dist folder
+// make sure to change the branch to "gh-pages" in Github Pages settings before 
+gulp.task("deploy", function (){
+    ghpages.publish("dist")
+})
 
 // DEFAULT TASK when you run "gulp" in command line
 // first it will do the changes and then keep watch
