@@ -1,22 +1,23 @@
 // this adds the plug-ins to the project so you can use it in your code (need to add the plug-ins on a per project basis to include them in the package.json file. Do not need to install gulp again.)
 // require it from the package.json (what it's called in the package.json file i.e. gulp, gulp-sass, gulp-sourcemaps)
 var gulp = require('gulp')
-var sass = require('gulp-sass')
+var sass = require("gulp-sass")
 var cleanCss = require("gulp-clean-css") // plug-in to minimize the code in css file so it's all on one line
+
 var sourcemaps = require("gulp-sourcemaps")
 // this will set the source maps as .scss file and the correct line number when you're in Chrome Developer Tools (without it, it shows everything on .css line 1 because of the css minify)
-const { sync } = require('gulp-sass')
 
 var browserSync = require("browser-sync").create()
+// browser refresh
 // .create() creates a new server
 
-var imagemin= require("gulp-imagemin")
+var imagemin = require("gulp-imagemin")
 // minify the images to save load speed
 // when you run gulp, it will show you how many images were minified and how many kB saved
 
 var ghpages = require("gh-pages")
 
-sass.compiler = require('node-sass')
+sass.compiler = require("node-sass")
 
 
 // task will run when you type "sass" in command line
