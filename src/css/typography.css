@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Jost";
+    src: url(fonts/jost-book.woff2), url(fonts/jost-book.woff);
+}
+
+@font-face {
+    font-family: "Bagnard";
+    src:url(fonts/bagnard.woff2), url(fonts/bagnard.woff);
+}
+
+:root {
+    --title-font:"Bagnard";
+    --body-font: "Jost";
+    --h1-size: 95px;
+    --h2-size: 64px;
+    --h3-size: 32px;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--title-font);
+}
+
+h1 {
+    font-size: var(--h1-size);
+}

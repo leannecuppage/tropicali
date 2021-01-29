@@ -1,0 +1,36 @@
+@custom-media --mq-medium (max-width:800px);
+
+
+:root{
+    --primary-color: #f70201;
+    --text-on-light: #151620;
+    --text-on-dark: #ffffff;
+    --background-color: #ffffff;
+
+    --main-spacing: 64px;
+    --gap-spacing: 40px;
+    --header-height: 80px;
+}
+
+@media (--mq-medium) {
+    :root {
+        --main-spacing: 40px;
+        --gap-spacing: 32px;
+    }
+}
+
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: var(--header-height);
+    padding: 10px 20px 10px 20px;
+}
