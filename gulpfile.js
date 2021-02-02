@@ -92,7 +92,7 @@ gulp.task("watch", function () {
         }
     })
 
-    gulp.task('reload', function(){
+    gulp.task("reload", function(){
         browserSync.reload()
         // call the reload method as a separate task
         // this fixed the browser not reloading automatically when changes saved
