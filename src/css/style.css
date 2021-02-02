@@ -82,6 +82,11 @@ section.grid p {
     margin: 20px 0 20px 0;
 }
 
+section.grid img {
+    width: 100%;
+    /* this will make the images fit the page especially on larger screens */
+}
+
 .button {
     display: inline-block;
     color: var(--text-on-dark);
